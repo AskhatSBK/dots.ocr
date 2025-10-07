@@ -11,4 +11,4 @@ huggingface_hub
 modelscope
 flash-attn==2.8.0.post2
 accelerate
-vllm
+vllm==0.9.1
