@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   dots-ocr-server:
-    image: dots-ocr:vllm-openai-v0.9.1
+    image: rednotehilab/dots.ocr:vllm-openai-v0.9.1
     container_name: dots-ocr-container
     ports:
       - "8000:8000"
