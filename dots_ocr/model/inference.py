@@ -8,7 +8,7 @@ def inference_with_vllm(
         image,
         prompt, 
         ip="localhost",
-        port=8000,
+        port=8008,
         temperature=0.1,
         top_p=0.9,
         max_completion_tokens=32768,

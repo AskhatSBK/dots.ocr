@@ -21,7 +21,7 @@ class DotsOCRParser:
     
     def __init__(self, 
             ip='localhost',
-            port=8000,
+            port=8008,
             model_name='model',
             temperature=0.1,
             top_p=1.0,
