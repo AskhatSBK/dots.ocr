@@ -5,7 +5,7 @@ services:
     image: rednotehilab/dots.ocr:vllm-openai-v0.9.1
     container_name: dots-ocr-container
     ports:
-      - "8008:8008"  # Map port 8008 of the container to port 8008 on the host
+      - "8000:8008"  # Map port 8008 of the container to port 8008 on the host
     volumes:
       #download model to local，model url：https://www.modelscope.cn/models/rednote-hilab/dots.ocr
       - ../weights/DotsOCR:/workspace/weights/DotsOCR
