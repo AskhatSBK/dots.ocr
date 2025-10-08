@@ -1,6 +1,4 @@
 # streamlit 
-wheel
-ninja
 gradio
 gradio_image_annotation
 PyMuPDF
@@ -11,4 +9,3 @@ huggingface_hub
 modelscope
 flash-attn==2.8.0.post2
 accelerate
-vllm==0.9.1

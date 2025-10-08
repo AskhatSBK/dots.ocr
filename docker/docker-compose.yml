@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   dots-ocr-server:
-    image: dots-ocr:latest
+    image: dots-ocr:vllm-openai-v0.9.1
     container_name: dots-ocr-container
     ports:
       - "8000:8000"
@@ -16,7 +16,7 @@ services:
         reservations:
           devices:
             - capabilities: [gpu]
-              device_ids: ['0']
+              device_ids: ['7']
     entrypoint: /bin/bash
     command:
       - -c
@@ -34,7 +34,7 @@ services:
         # ensuring logs are properly forwarded to Docker's standard output.
         exec vllm serve /workspace/weights/DotsOCR \
             --tensor-parallel-size 1 \
-            --gpu-memory-utilization 0.8 \
+            --gpu-memory-utilization 0.5 \
             --chat-template-content-format string \
             --served-model-name dotsocr-model \
             --trust-remote-code
