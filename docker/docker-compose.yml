@@ -19,11 +19,11 @@ services:
               device_ids: ['7']
     entrypoint: /bin/bash
     command:
-    - /bin/bash
-    - -c
-    - |
-      echo 'Container ready for debugging';
-      tail -f /dev/null
+      - /bin/bash
+      - -c
+      - |
+        echo 'Container ready for debugging';
+        tail -f /dev/null
 
     # command:
     #   - -c
