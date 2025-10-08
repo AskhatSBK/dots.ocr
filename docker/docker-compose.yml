@@ -17,7 +17,7 @@ services:
           devices:
             - capabilities: [gpu]
               device_ids: ['7']
-    entrypoint: /bin/bash
+    # entrypoint: /bin/bash
     command:
       - /bin/bash
       - -c
