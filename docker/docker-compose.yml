@@ -25,7 +25,7 @@ services:
         echo '--- Starting setup and server ---';
         echo 'Modifying vllm entrypoint...';
         # This sed command patches the vllm entrypoint script to import the custom modeling code.
-        sed -i '/^from vllm\.entrypoints\.cli\.main import main/a from dots.ocr import modeling_dots_ocr_vllm' $(which vllm) && \
+        sed -i '/^from vllm\.entrypoints\.cli\.main import main/a from DotsOCR import modeling_dots_ocr_vllm' $(which vllm) && \
         echo 'vllm script after patch:';
         # Show the patched part of the vllm script for verification.
         grep -A 1 'from vllm.entrypoints.cli.main import main' $(which vllm) && \
