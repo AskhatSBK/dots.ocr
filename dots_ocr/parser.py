@@ -352,7 +352,7 @@ def main():
         help=""
     )
     parser.add_argument(
-        "--port", type=int, default=8000,
+        "--port", type=int, default=8008,
         help=""
     )
     parser.add_argument(
